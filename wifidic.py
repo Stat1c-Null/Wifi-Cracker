@@ -1,7 +1,7 @@
 import itertools as its
 words = "1234567890abcdefghijklmnopqrstuvwxyz" # a set of password characters
 r =its.product(words,repeat=8)  # random combination of 8 characters
-dic = open("10milpwd.txt","a")      # store wifi combinations in file
+dic = open("pwd.txt","a")      # creates a new pwd.txt file and store random wifi combinations in file
 for i in r:
     dic.write("".join(i))
     dic.write("".join("\n"))
